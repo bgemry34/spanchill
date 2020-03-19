@@ -15,7 +15,7 @@ session_start();
 </head>
 <body>
 <div class="loading" id="loading">Loading&#8230;</div>
-        <nav>
+        <nav style="height:80px">
             <div class="container-fluid">
             <div class="nav-logo">
             <a href="./"><img style="height:64px; display:block; float:left" src="./images/navbrand.png" alt=""></a>
@@ -56,12 +56,6 @@ session_start();
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- <tr>
-                            <td>123123123</td>
-                            <td>123123123</td>
-                            <td class="text-center">124,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> </button> </td>
-                        </tr> -->
                         <?php
                         $username = $_SESSION['user'];
                         $mysqli = new mysqli('localhost', 'root', '', 'spanchill');
