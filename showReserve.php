@@ -27,7 +27,7 @@ session_start();
                         <li><a href="./Posts">Posts</a></li>
                         <?php if(isset($_SESSION['user'])):?>
                         <li><a href="./reserve.php">Reservation</a></li>
-                        <li><a href="./auth/users/profile.php"><?=$_SESSION['user']?></a></li>
+                        <li><a href="#"><?=$_SESSION['user']?></a></li>
                         <li><a href="./logout.php">Log-out</a></li>
                         <?php else: ?>
                         <li><a href="./users/login/">Login</a></li>
